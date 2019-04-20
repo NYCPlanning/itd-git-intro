@@ -31,7 +31,7 @@ This is a guide for DCP's ITD trainings focused on setting up Git and practicing
 14. Run `git add .` to add your changed files to the Git tracking
 15. If you run `git status` again, you'll see that your README file is now listed under "Changes to be committed" and shown in green.
 16. Run `git commit -m "message explaining what changes you made to the code"` to package up your changes into a "commit" with an explanation of your changes and the reasoning behind them. This is important for version control and understanding what was changed and why. `-m` stands for message.
-17. If you run `git status` again, you'll see that your changed README file is now listed as ______
+17. If you run `git status` again, you'll see that you now have "nothing to commit, working tree clean"
 18. Run `git push origin master` to push your commit to the remote "master" repository on GitHub.
 19. A popup window will appear prompting you to login to GitHub. Login then go back to the Command Prompt.
 19. After a second or two, you should receive a success message. Now you can git back to the GitHub website, refresh the page, and see that your new change and "commit" message will appear.
