@@ -36,6 +36,24 @@ This is a guide for DCP's ITD trainings focused on setting up Git and practicing
 19. A popup window will appear prompting you to login to GitHub. Login then go back to the Command Prompt.
 19. After a second or two, you should receive a success message. Now you can git back to the GitHub website, refresh the page, and see that your new change and "commit" message will appear.
 
+## Reminders of best practices when collaborating with others on an existing repository
+- Each repo should contain a production branch (`master`), staging branch (`develop`), and individual branches for new features or bug fixes. You should do your work on a new branch and avoid making changes directly to master or develop.
+- After you've already cloned the repo, always `git pull` the latest work from the remote repo before you start making new changes.
+- Frequently merge in changes that have been implemented on `develop` into your own working branch to avoid future merge conflicts.
+    - `git checkout develop` (this moves you onto the develop branch)
+    - `git pull origin develop` (this pulls the latest work on develop from the remote repo)
+    - `git checkout yourbranch` (this moves you back to your branch)
+    - `git merge develop` (this merges the latest work from develop into your branch)
+
+## Git commands for checking / adding / removing remote repository connections
+- `git remote -v` to view the remote repositories you are connected to
+- `git remote add origin <insert link to repo>.git` to connect code on your computer to an online repository
+- `git remote rm <name of remote repo>` to remove an online repository
+
+## Git commands for creating a new branch of switching between branches
+- Creating a new branch: `git checkout -b newbranchname`
+- Switching to another existing branch: `git checkout branchyouwant`
+
 ## Dealing with merge conflicts
 Sometimes merging code is thwarted because Git detects different content in the same lines of code that it can't automatically reconcile. This is called a "merge conflict." Outlined below are some steps for resolving merge conflicts on your local computer via the command prompt and text editor.
 1. Look closely at the merge conflict message in the Command Prompt. It will tell you which files contain conflicts.
