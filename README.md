@@ -29,7 +29,7 @@ This is a guide for DCP's ITD trainings focused on setting up Git and practicing
 12. Save your changes to the README.md file and go back to the Command Prompt
 13. Run `git status` to compare the content of your local repo against the "master" repo on GitHub. Git will tell you that you have "Changes not staged for commit" and tell you the name of the modified file that differs shown in red.
 14. Run `git add .` to add your changed files to the Git tracking
-15. If you run `git status` again, you'll see that your changed README file is now listed as tracked and shown in green.
+15. If you run `git status` again, you'll see that your README file is now listed under "Changes to be committed" and shown in green.
 16. Run `git commit -m "message explaining what changes you made to the code"` to package up your changes into a "commit" with an explanation of your changes and the reasoning behind them. This is important for version control and understanding what was changed and why. `-m` stands for message.
 17. If you run `git status` again, you'll see that your changed README file is now listed as ______
 18. Run `git push origin master` to push your commit to the remote "master" repository on GitHub.
