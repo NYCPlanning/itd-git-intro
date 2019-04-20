@@ -40,7 +40,7 @@ This is a guide for DCP's ITD trainings focused on setting up Git and practicing
 Sometimes merging code is thwarted because Git detects different content in the same lines of code that it can't automatically reconcile. This is called a "merge conflict." Outlined below are some steps for resolving merge conflicts on your local computer via the command prompt and text editor.
 1. Look closely at the merge conflict message in the Command Prompt. It will tell you which files contain conflicts.
 2. In Atom, open each file containing the conflicts.
-3. Search the text for the word "HEAD." Git flags sections of the code that have conflicts with HEAD and many <<<<<<< carrots.
+3. Search the text for the word "HEAD." Git flags sections of the code that have conflicts with HEAD and <<<<<< carrots. ![merge_conflict](images/conflict.PNG)
 4. Review the section of code demarked by HEAD and a several <<<<<<< and edit the file so that only the desired code remains. Sometimes this requires talking to your colleagues whose code is conflicting with yours to confirm which version is right.
 5. Keep searching for other instances of "HEAD" and cleaning up the code until "HEAD" can no longer be found in any of the files.
 6. `git add .` your changes
