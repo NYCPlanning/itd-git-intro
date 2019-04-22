@@ -18,23 +18,35 @@ This is a guide for DCP's ITD trainings focused on setting up Git and practicing
 
 ## Practicing the Git work flow
 1. Create a new repository in your personal GitHub account
+[creating_repo](images/step1.PNG)
 2. Click the "Clone or download" button and copy the HTTPS link
+[cloning_repo](images/step2.PNG)
 3. Now open the Command Prompt. For Windows 10: "Type here to search" → "Command Prompt"
+[command_prompt](images/step3.PNG)
 6. Run `dir` to list the files in your current user folder
 7. Run `git clone https://github.com/youraccount/yourrepo.git` using the actual HTTPS link you just copied from the GitHub website
+[git_clone](images/step4.PNG)
 8. Run `dir` again to see that a folder for repo you just cloned is now in the list
 9. Run `cd yourrepo` to navigate into the repo folder
+[cd_into_repo](images/step5.PNG)
 10. Run `atom .` to open all the repo folder content in the Atom text editor
 11. Add some text inside the README.md file. Ex: "Hello World, I'm learning how to use Git!"
+[make_changes_to_readme](images/step6.PNG)
 12. Save your changes to the README.md file and go back to the Command Prompt
 13. Run `git status` to compare the content of your local repo against the "master" repo on GitHub. Git will tell you that you have "Changes not staged for commit" and tell you the name of the modified file that differs shown in red.
+[git_status](images/step7.PNG)
 14. Run `git add .` to add your changed files to the Git tracking
 15. If you run `git status` again, you'll see that your README file is now listed under "Changes to be committed" and shown in green.
+[git_add](images/step8.PNG)
 16. Run `git commit -m "message explaining what changes you made to the code"` to package up your changes into a "commit" with an explanation of your changes and the reasoning behind them. This is important for version control and understanding what was changed and why. `-m` stands for message.
 17. If you run `git status` again, you'll see that you now have "nothing to commit, working tree clean"
+[git_commit](images/step9.PNG)
 18. Run `git push origin master` to push your commit to the remote "master" repository on GitHub.
 19. A popup window will appear prompting you to login to GitHub. Login then go back to the Command Prompt.
+[git_login](images/step10.PNG)
 19. After a second or two, you should receive a success message. Now you can git back to the GitHub website, refresh the page, and see that your new change and "commit" message will appear.
+[push_success](images/step11.PNG)
+[github_refresh](images/step12.PNG)
 
 ## Reminders of best practices when collaborating with others on an existing repository
 - Each repo should contain a production branch (`master`), staging branch (`develop`), and individual branches for new features or bug fixes. You should do your work on a new branch and avoid making changes directly to master or develop.
