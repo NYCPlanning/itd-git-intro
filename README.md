@@ -77,6 +77,18 @@ Sometimes merging code is thwarted because Git detects different content in the 
 7. `git commit -m "resolve conflicts between yourbranch and branchyoumergedwith`
 8. `git push origin yourbranch`
 
+## Errors
+Git has plenty of error messages for various scenerios that you may encounter. Here are some of them and how to fix them:
+1. 
+fatal: The current branch <branch name> has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin <branch name>
+
+It means that the current local branch has no "upstream". An "upstream" allows Git to know which branch on the Github repo you are trying to modify, by default. So if you try to do a "Git Push", your local Git knows which branch you are trying to push up to, without you having to specify such as in "Git Push origin master" which is explicitly stating to push up to the master branch of the repository on Github. To fix this, simply type in this command:
+
+git branch --set-upstream <remote-branch>
+
 ## Reverting your code to an earlier version
 Sometimes you'll make a mistake and want to revert to an earlier version of the code. This is an easy process, once you figure out which commit captures the version you want to revert to.
 1. Look through the commit history on Github and identify which commit is the safe version you want to revert to.
