@@ -3,6 +3,14 @@ This is a guide for DCP's ITD trainings focused on setting up Git and practicing
 
 ### [Click here for the Hackathon Guide](https://docs.google.com/document/d/1qVKrJmOL1Qva_WXcC_p6XSeTseeNF03mwVH9-IxvE84/edit?usp=sharing)
 
+## Atom Server Setup (this allows you to locally serve your code and preview your web app)
+1. Open Atom text editor
+2. Click "Install a Package" on the "Get to know Atom!" pane
+3. Click "Open Installer"
+4. Search for "server"
+5. Install "atom-live-server"
+6. Once it finishes installing, you'll see atom-live-server listed under the Packages menu. When you select it, you'll see the option to "Start server"
+
 ## Prerequisite computer setup for Git on Windows 10
 1. "Type to search" → "Default app settings"
 2. Click on the icon under "Web Browser" and select Google Chrome from the options. Then close out of the settings window.
@@ -98,10 +106,3 @@ Sometimes you'll make a mistake and want to revert to an earlier version of the 
 3. Go back to the Command Prompt and run `git reset --hard f414f31`
 4. You'll get a success message saying you have reverted to the version from that commit ID.
 
-## Atom Server Setup (this allows you to locally serve your code and preview your web app)
-1. Open Atom text editor
-2. Click "Install a Package" on the "Get to know Atom!" pane
-3. Click "Open Installer"
-4. Search for "server"
-5. Install "atom-live-server"
-6. Once it finishes installing, you'll see atom-live-server listed under the Packages menu. When you select it, you'll see the option to "Start server"
