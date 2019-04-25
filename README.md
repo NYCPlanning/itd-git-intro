@@ -1,6 +1,8 @@
 # itd-git-intro
 This is a guide for DCP's ITD trainings focused on setting up Git and practicing Git workflows.
 
+### [Click here for the Hackathon Guide](https://docs.google.com/document/d/1qVKrJmOL1Qva_WXcC_p6XSeTseeNF03mwVH9-IxvE84/edit?usp=sharing)
+
 ## Prerequisite computer setup for Git on Windows 10
 1. "Type to search" → "Default app settings"
 2. Click on the icon under "Web Browser" and select Google Chrome from the options. Then close out of the settings window.
